@@ -1,9 +1,40 @@
-h1{
-  color:#DEAC80; 
+body{
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+  margin:0;
+  padding:0;
+}
+header{
+  background-color: #e9c46a;
+  padding:20px;
+  text-align: center;
+}
+  h1{
+    color:#264653;
+}
+main{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  padding:20px;
+}
+.menu-section{
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding:20px;
+  width:250px;
+  box-shadow: 0 2px 4px rgba(173, 86, 86, 0.1);
 }
 h2{
-    color: #F7DCB9;
+  color:#264653;
+  margin-bottom: 10px;
 }
-
-
-
+ul{
+  list-style: none;
+  padding:0;
+}
+li{
+  color:#264653;
+  margin-bottom: 5px;
+}
