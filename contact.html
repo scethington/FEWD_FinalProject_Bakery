@@ -6,20 +6,21 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
+
+  <div class="header">
+    <h1>Bakery Name</h1>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
    
-    <h2>Contact Form</h2>
-
-    <div class="header">
-      <h1>Bakery Name</h1>
-      <div class="navbar">
-          <a href="home.html">Home</a>
-          <a href="menu.html">Menu</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="contact.html">Contact</a>
-      </div>
-
-<div class="container">
+    <div class="cform">
+    <div class="container"> 
+     
   <form action="/action_page.php">
+    <h2>Contact Form</h2>
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -36,13 +37,13 @@
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+    <button type="submit">Send</button>
   </form>
-</div>
-
+  </div>
+      </div>
 
 <div class="footer">
-  <p>This is the footer. I'm not sure what goes down here</p>
+  <p>This is the footer</p>
 </div>
 
 </body>

@@ -1,12 +1,119 @@
-#color1{
-    color: #914F1E;
+.header{
+    background-color: #914F1E;
+    position:absolute;
+    top: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns:4fr 1fr;
+    padding-left: 2%;
+    padding-right: 10%;
+    padding-bottom: 0%;
 }
-#color2{
+.header h1{
     color: #DEAC80;
+    font-size:64px;
+    margin-bottom: 1%;
+    margin-left: 10%;
 }
-#color3{
-    color: #F7DCB9;
+
+.header a{
+    color: #DEAC80;
+    font-size: 24px;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
 }
-#color4{
-    color: #B5C18E;
+
+.header a:hover{
+    background-color: #B5C18E;
+    color:#914F1E;
+    border-radius:3px;
+}
+
+.navbar{
+    display:flex;
+    padding-bottom:0%;
+    margin-right:20%;
+    margin-bottom:5%;
+    justify-content:flex-end;
+    align-items:flex-end;
+    justify-content: space-between;
+
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:10px}
+
+   *{
+    margin: 0%;
+    background-color: #F7DCB9;
+    box-sizing: border-box; }
+
+
+    .footer{
+        background-color: #914F1E;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+    }
+    
+    .footer p{
+        text-align: center;
+        padding-top:20px;
+        color:#DEAC80
+    }
+    
+ 
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: #F7DCB9    }
+
+    .container {
+        background: #914F1E;
+        padding: 20px;
+        border-radius: 10px;
+        width:auto ;
+        text-align: center;
+    }
+    
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    input, textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #DEAC80;
+        border-radius: 5px;
+    }
+
+button {
+    padding: 10px;
+    background-color: #deac80;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b5c183;
+}
+.cform {
+    margin: auto;
+    width: 100%;
+    border: solid 2px black;
+    padding-right: 50%;
+    padding-left: 50%;
 }
