@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakery Name</title>
+    <title>Sweet Delights Bakery</title>
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
     <div class="header">
-        <h1>Bakery Name</h1>
+        <h1>Sweet Delights Bakery</h1>
         <div class="navbar">
             <a href="index.html">Home</a>
             <a href="menu.html">Menu</a>
@@ -18,9 +18,14 @@
     </div>
     <div class="content1">
         <img src="https://t4.ftcdn.net/jpg/08/28/12/09/360_F_828120944_P11db9o0QLxGZyQNlzTjnr3kaq7bGc1n.jpg" alt="An external shot of our bakery">
-        <h3>Welcome to Bakery Name!</h3>
+        <h3>Welcome to Sweet Delights Bakery!</h3>
         <p>Delicious goods are baked fresh every day.</p>
         <p>Check out our menu and gallery and come on in to taste it yourself! Please contact us for catering and online orders.</p>
+    </div>
+
+    <div id="cookies">
+        <h3>This site bakes cookies!</h3>
+        <button onclick="HideCookies()">Accept cookies</button>
     </div>
 
     <div class="footer">
@@ -56,5 +61,12 @@
             </tr>
         </table>
     </div>
+
+    <script>
+        function HideCookies()
+        {
+            document.getElementById("cookies").style.display = "none";
+        }
+    </script>
 </body>
 </html>
