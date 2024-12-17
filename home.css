@@ -10,19 +10,6 @@ body{
     flex-direction: column;
 }
 
-#color1{
-    color: #914F1E;
-}
-#color2{
-    color: #DEAC80;
-}
-#color3{
-    color: #F7DCB9;
-}
-#color4{
-    color: #B5C18E;
-}
-
 .header{
     background-color: #914F1E;
     position:static;
@@ -74,11 +61,11 @@ body{
 }
 
 .content1 h3{
-    font-size: 32px;
+    font-size: 42px;
 }
 
 .content1 p{
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .content1 img{
@@ -92,7 +79,7 @@ body{
     margin-top:auto;
     bottom: 0;
     width: 100%;
-    height: 250px;
+    height: 260px;
     box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
 }
 
@@ -106,6 +93,11 @@ body{
 .footer table{
     margin-left: auto;
     margin-right: auto;
+    color: #DEAC80;
+}
+
+.footer p{
+    text-align: center;
     color: #DEAC80;
 }
 
