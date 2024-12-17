@@ -105,20 +105,31 @@ button:hover {
 .faq {
     color: #914F1E;
     float: right;
+    margin-right: 80px;
 }
 
-img {
+.buns {
     height: 250px;
     width: 250px;
-   position: fixed;
-   bottom: 150px;
-   right: 80px;
 }
 
+
 .socials {
-    margin-left: 10%;
-    margin-right: 60%;
-    background-color: #914F1E;
+    left: 10%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    }
+
+ .links {
+    
+ 
+}
+
+.socials img {
+    width: 200px;
+    
+
 }
 
 
