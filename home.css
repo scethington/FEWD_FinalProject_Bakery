@@ -70,7 +70,6 @@ body{
 
 .content1 img{
     border-radius: 5px;
-    width: 70%;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
@@ -155,6 +154,10 @@ body{
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         width: 500px;
     }
+
+    .content1 img{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width:1000px){
@@ -185,5 +188,9 @@ body{
         width: 100%;
         position: fixed;
         bottom: 0;
+    }
+
+    .content1 img{
+        width: 100%;
     }
 }

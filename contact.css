@@ -23,19 +23,15 @@ body{
 
 .header{
     background-color: #914F1E;
-    position: static;
+    position:static;
     top: 0;
     width: 100%;
-    display: grid;
-    grid-template-columns:4fr 1fr;
-
+    padding-bottom: 0%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .header h1{
     color: #DEAC80;
-    font-size:64px;
-    margin-bottom: 1%;
-    margin-left: 10%;
 }
 
 .header a{
@@ -171,75 +167,28 @@ button:hover {
 
 .footer {
     background-color: #914F1E;
-    position: relative;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 260px;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.1);
+}
+
+.footer h3{
+    text-align: center;
+    padding-top:20px;
+    color:#DEAC80;
+    margin-bottom:5px;
+}
+
+.footer table{
+    margin-left: auto;
+    margin-right: auto;
+    color: #DEAC80;
 }
 
 .footer p {
     text-align: center;
-    padding-top: 30px;
-    color: #DEAC80;
-}
-
-
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2em;
-        padding-left: 0;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar a {
-        padding: 10px 0;
-    }
-
-   
-    .socials, .faq {
-        width: 100%;
-        float: none;
-        text-align: center;
-    }
-
-    .cform {
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 100%;
-    }
-
-    .faq img {
-        max-width: 100%;
-    }
-
-    .footer {
-        height: auto;
-        padding-bottom: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header h1 {
-        font-size: 1.5em;
-    }
-
-    .navbar {
-        gap: 10px;
-    }
-
-    .socials img {
-        max-width: 100%;
-    }
-
-    .cform input,
-    .cform textarea {
-        font-size: 14px;
-    }
-
-    .footer p {
-        font-size: 12px;
-    }
+    padding-top:20px;
+    color:#DEAC80
 }
