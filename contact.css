@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
 }
@@ -64,23 +65,27 @@ body{
     grid-template-columns: repeat(5,1fr);
     gap:10px
 }
- form {
+
+form {
     display: flex;
     flex-direction: column;
- }
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-    label {
-        margin-bottom: 5px;
-        font-weight: bold;
-        text-align: center;
-    }
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
 
-    input, textarea {
-        margin-bottom: 15px;
-        padding: 10px;
-        border: 1px solid #DEAC80;
-        border-radius: 5px;
-    }
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #DEAC80;
+    border-radius: 5px;
+}
 
 button {
     padding: 10px;
@@ -97,52 +102,144 @@ button:hover {
 .cform {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-left: 280px;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 20px;
     color: #914F1E;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
 }
+
 
 .faq {
     color: #914F1E;
-    float: right;
-    margin-right: 80px;
+    margin: 20px;
+    text-align: left;
+    width: 50%;
+    float: left;
 }
 
-.buns {
-    height: 250px;
-    width: 250px;
+.faq ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.faq li {
+    margin-bottom: 10px;
+}
+
+.faq img {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
 }
 
 
 .socials {
-    left: 10%;
-    position: absolute;
     display: flex;
     flex-direction: column;
-    }
+    align-items: center;
+    margin-top: 20px;
+    width: 40%;
+    float: right;
+}
 
- .links {
-    
- 
+.socials h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.socials .links {
+    display: flex;
+    gap: 15px;
+}
+
+.socials .links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
 }
 
 .socials img {
-    width: 200px;
-    
-
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
 }
 
 
-.footer{
+.footer {
     background-color: #914F1E;
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
     height: 100px;
 }
 
-.footer p{
+.footer p {
     text-align: center;
-    padding-top:20px;
-    color:#DEAC80
+    padding-top: 30px;
+    color: #DEAC80;
+}
+
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+        padding-left: 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        padding: 10px 0;
+    }
+
+   
+    .socials, .faq {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .cform {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+
+    .faq img {
+        max-width: 100%;
+    }
+
+    .footer {
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .socials img {
+        max-width: 100%;
+    }
+
+    .cform input,
+    .cform textarea {
+        font-size: 14px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
 }
