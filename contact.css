@@ -62,109 +62,37 @@ body{
     gap:10px
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+input[type=text], select, textarea {
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    text-align: left;
-}
-
-input, textarea {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #DEAC80;
-    border-radius: 5px;
-}
-
-button {
-    padding: 10px;
-    background-color: #deac80;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #914f1e;
+    color: white;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #b5c183;
-}
-
-.cform {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 0 20px;
-    color: #914F1E;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    gap: 20px;
-}
-
-
-.faq {
-    color: #914F1E;
-    margin: 20px;
-    text-align: left;
-    width: 50%;
-    float: left;
-}
-
-.faq ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.faq li {
-    margin-bottom: 10px;
-}
-
-.faq img {
-    width: 100%;
-    max-width: 500px;
-    margin: 20px 0;
-}
-
-
-.socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    width: 40%;
-    float: right;
-}
-
-.socials h3 {
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.socials .links {
-    display: flex;
-    gap: 15px;
-}
-
-.socials .links a {
-    text-decoration: none;
-    color: #333;
-    font-size: 1.1em;
-}
-
-.socials img {
-    width: 100%;
-    max-width: 300px;
-    margin: 20px 0;
-}
-
-
+  }
+  
+  input[type=submit]:hover {
+    background-color: #B5C18E;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #DEAC80;
+    padding: 20px;
+  }
+  
+  
 .footer {
     background-color: #914F1E;
     position: fixed;
@@ -190,5 +118,42 @@ button:hover {
 .footer p {
     text-align: center;
     padding-top:20px;
-    color:#DEAC80
-}
+    color:#DEAC80 }
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  
